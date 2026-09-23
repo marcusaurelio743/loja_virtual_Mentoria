@@ -1,20 +1,24 @@
 package br.com.lojaVirtual.enums;
 
-public enum TipoEndereco {
+public enum StatusContaReceber {
 	COBRANCA("cobranca"),
-	ENTREGA("entrega");
+	VENCIDA("vencida"),
+	ABERTA("aberta"),
+	QUITADO("quitado");
 	
 	private String descricao;
 	
-	private TipoEndereco(String descricao) {
+	private StatusContaReceber(String descricao) {
 		this.descricao = descricao;
 	}
+	
 	public String getDescricao() {
 		return descricao;
 	}
 	
 	@Override
 	public String toString() {
+		
 		return this.descricao;
 	}
 }
